@@ -1,0 +1,9 @@
+#Doğduğu yılın rakamları toplamı 2005teki yaşıyla aynı olan kişinin doğduğu yıl
+>>> for i in range(1000,2100):
+...  a=2005-i
+...  x=int(str(i)[0])
+...  y=int(str(i)[1])
+...  z=int(str(i)[2])
+...  t=int(str(i)[3])
+...  if x+y+z+t==a:
+...   print(i)
