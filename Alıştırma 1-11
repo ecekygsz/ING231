@@ -1,0 +1,12 @@
+#125,250 ve 350 sayılarının en büyük ortak kalanı
+a=[]
+for x in range (1,126):
+    y=125%x
+    z=200%x
+    t=350%x
+
+
+    if y==z==t:
+       liste.append(x)
+
+print(max(a))
