@@ -1,0 +1,8 @@
+#5 basamaklı sayılardan ilk basamağı ve son basamağı aynı olanların sayısı
+>>> import math
+>>> a=[]
+>>> for i in range(10000,100000):
+...  if str(i)[0]==str(i)[4]:
+...   a.append(i)
+...
+>>> len(a)
