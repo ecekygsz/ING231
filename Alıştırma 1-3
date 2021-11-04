@@ -1,0 +1,6 @@
+#Verilen toplam formülüne göre e'yi bul.
+>>> import math
+>>> sayi=0
+>>> for i in range(0,100000):
+...  sayi=sayi*i+1
+>>>print("e=",sayi)
