@@ -1,0 +1,8 @@
+for a in range(100,10000):
+    b=str(a)
+    if len(b)==3:
+        if b[0]==b[2]:
+            print(int(b))
+    else:
+        if b[0]==b[3] and b[1]==b[2]:
+            print(int(b))
