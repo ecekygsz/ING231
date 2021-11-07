@@ -1,0 +1,36 @@
+ import random
+
+ 
+
+tutulanSayi=random.randint(10,98)
+while tutulanSayi%11==0:
+    tutulanSayi=random.randint(10,98)
+a=str(tutulanSayi)
+
+tahmin=0
+while tahmin!=tutulanSayi:
+    tahmin=(int(input("Tahmin = ")))
+    if((tahmin%11==0)or(tahmin<10)or(tahmin>98)):
+        print("Lütfen 9 dan büyük ve 99 dan küçük ve rakamları farklı olan bir tamsayı giriniz!")
+    else:
+        dogru=0
+        yanlis=0
+        b=str(tahmin)
+        if a[0]==b[0]:
+            dogru+=1
+        if a[0]==b[1]:
+            yanlis+=1
+        if a[1]==b[0]:
+            yanlis+=1
+        if a[1]==b[1]:
+            dogru+=1
+        if dogru==0 and yanlis==0:
+            print("0")
+        if dogru==0 and yanlis!=0:
+            print("-",yanlisYer)
+        if dogru==1 and yanlis==0:
+            print("+1")
+
+ 
+
+print("TEBRİKLER")
