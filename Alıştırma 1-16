@@ -1,0 +1,10 @@
+a=int(input("Bir sayi giriniz: \n"))
+if a >1 :
+    for i in range(2,a):
+        if a%i==0:
+            print(a, "asal sayi degil")
+            break 
+        else:
+            print(a,"asal sayi")
+else:
+    print(a,"asal sayi degil")
