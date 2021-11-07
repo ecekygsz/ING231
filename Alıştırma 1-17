@@ -1,8 +1,17 @@
-for a in range(100,10000):
+#Klavyeden girilen 3 veya 4 basamaklı sayı palindromik mi
+a=int(input("3 veya 4 basamakli bir sayi girin:"))
+if a in range(100,10000):
     b=str(a)
     if len(b)==3:
         if b[0]==b[2]:
-            print(int(b))
-    else:
+            print("Girdiğiniz sayi palindromik")
+        else:
+            print("palindromik degil")
+    else:     
         if b[0]==b[3] and b[1]==b[2]:
-            print(int(b))
+            print("Girdiğiniz sayi palindromik")
+        else:
+            print("Girdiginiz sayi palindromik degil")
+    
+else:
+    print("Yanlis sayi girdiniz, 3 veya 4 basamakli bir sayi girin.")
