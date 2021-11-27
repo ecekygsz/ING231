@@ -1,0 +1,16 @@
+def superPrime(n):
+    for i in range(2,n):
+        if n % i == 0:
+            return -1
+    n = str(n)
+    if len(n) > 1:
+        new_n = int(n[:len(n)-1])
+        return superPrime(new_n)
+
+super_primes = []
+for n in range(10000,100000):
+    result = superPrime(n)
+    if result != -1:
+        super_primes.append(n)
+
+print(super_primes)
